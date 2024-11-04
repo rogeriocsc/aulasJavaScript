@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #347355;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+main {
+    margin: 0px 5px;
+}
+
+section {
+    max-width: 800px;
+    height: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.quadrado {
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-color: red;
+    border-radius: 10px;
+}
+ 
+p {
+    padding: 5px;
+    font-size: 1.1em;
+    color: white;
+}
+
+button {
+    background: #191970;
+    padding: 18px;
+    margin: 5px;
+    color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

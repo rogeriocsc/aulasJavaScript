@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Entendendo Sobre DOM (Document Object Model)</title>
+    <link rel="shortcut icon" href="imagens/ico-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h2>Document Object Model (DOM)</h2>
+        <section>
+            <div class="quadrado" id="quad">
+                <p>Exemplo A</p>
+                <p class="texto">Exemplo B</p>
+                <p class="texto">Exemplo AB</p>
+                <p class="exemplo02">Exemplo C</p>
+                <button name="btn">Verificar</button>
+            </div>
+        </section>
+        <script>
+            var p1 = window.document.getElementsByTagName('p')[0]
+            p1.style.color = 'yellow'
+            // Seleciona o elemento por meio da tag fornecida.
+
+            var cor = window.document.getElementById('quad')
+            cor.style.background = '#038C3E'
+            // Seleciona o elemento com o id fornecido.
+
+            var btnV = window.document.getElementsByName('btn')[0]
+            btnV.style.background = '#10403B'
+            // Seleciona o elemento por meio do name fornecido.
+
+            var p2 = window.document.getElementsByClassName('exemplo02')[0]
+            p2.style.background = 'green'
+            p2.innerHTML = 'Exemplo 02'
+            // Seleciona o elemento por meio do nome da classe.
+            // innerText representa o conteúdo do texto. innerHTML define ou obtém a sintaxe HTML.
+
+            var color = window.document.querySelector('.texto')
+            color.style.color = 'blue'
+            // querySelector() Funciona com qualquer seletor CSS, classe ou ID
+
+            var texto = window.document.querySelectorAll('.texto')
+            texto[1].style.color = 'pink'
+             // querySelectorAll() retorna todos os elementos que correspondem a um ou mais seletores CSS.
+        </script>
+    </main>
+</body>
+</html>
