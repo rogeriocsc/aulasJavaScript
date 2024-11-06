@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação Aluno</title>
+    <link rel="shortcut icon" href="imagem/ico-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Situação Aluno</h2>
+        </header>
+        <section class="section-form">
+            <section class="elementos">
+                <div class="campo">
+                    <label for="nota1">Nota</label>
+                    <input type="text" name="nota1" id="n1" placeholder="Informe a Primeira Nota">
+                </div>
+                <div class="campo">
+                    <label for="nota2">Nota</label>
+                    <input type="text" name="nota2" id="n2" placeholder="Informe a Segunda Nota">
+                </div>
+                <button onclick="calcular()">Verificar</button>
+                <div class="res" id="resp">
+                    <p>Informe os dados Acima!</p>
+                </div>
+            </section>
+            <section class="img">
+                <img src="imagem/img-verificacao.png" alt="verificacao">
+            </section>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

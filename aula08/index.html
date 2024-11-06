@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor Promocional</title>
+    <link rel="shortcut icon" href="imagem/ico-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Preço Promocional</h2>
+        </header>
+        <section class="section-form">
+            <section class="elementos">
+                <div class="campo">
+                    <label for="prodt">Produto</label>
+                    <input type="text" name="prodt" id="prod" placeholder="Informe o nome do Produto">
+                </div>
+                <div class="campo">
+                    <label for="prec">Valor R$</label>
+                    <input type="text" name="prec" id="preco" placeholder="Informe o valor do Produto">
+                </div>
+                <div class="campo">
+                    <select id="operacao">
+                        <option value="">Selecione o Desconto R$</option>
+                        <option value="A">Desconto 5%</option>
+                        <option value="B">Desconto 10%</option>
+                        <option value="C">Desconto 15%</option>
+                        <option value="D">Desconto 20%</option>
+                    </select>
+                </div>
+                <button onclick="calcular()">Verificar</button>
+                <div class="res" id="res">
+                    <p>Informe os dados acima!</p>
+                </div>
+            </section>
+            <section class="img">
+                <img src="imagem/img-verificacao.png" alt="verificacao">
+            </section>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
