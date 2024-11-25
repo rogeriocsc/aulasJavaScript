@@ -11,4 +11,8 @@ Aprenda sobre JavaScript
 * [x] Estrutura condicional Simples
 * [x] Estrutura condicional Composta
 
+Bibliografia <br>
+curso livre Curso em vídeo. <br>
+Documentação: https://developer.mozilla.org/pt-BR/docs/Web#documenta%C3%A7%C3%A3o_para_desenvolvedores_web
+
 
