@@ -12,7 +12,7 @@ Aprenda sobre JavaScript
 * [x] Estrutura condicional Composta
 
 Bibliografia <br>
-curso livre Curso em vídeo. <br><br>
+Curso Gratuito Curso em vídeo. <br><br>
 Documentação: https://developer.mozilla.org/pt-BR/docs/Web#documenta%C3%A7%C3%A3o_para_desenvolvedores_web
 
 
