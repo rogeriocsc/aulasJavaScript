@@ -10,10 +10,11 @@ Aprenda sobre JavaScript
 * [x] Estrutura Condicional Switch Case
 * [x] Estrutura condicional Simples
 * [x] Estrutura condicional Composta
+* [x] Função
 
 Bibliografia <br>
 Curso Gratuito Curso em vídeo. <br>
-Curso Gratuito Prime. <br>
+Curso Gratuito Prime Cursos. <br>
 
 <li><a href="https://developer.mozilla.org/pt-BR/docs/Web#documenta%C3%A7%C3%A3o_para_desenvolvedores_web" target="_blank">Documentação</a></li>
 
