@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #347355;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+main {
+    margin: 0px 5px;
+}
+
+section {
+    max-width: 400px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.resp {
+    color: #191970;
+    font-size: 1.5em;
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
