@@ -11,6 +11,8 @@ Aprenda sobre JavaScript
 * [x] Estrutura condicional Simples
 * [x] Estrutura condicional Composta
 * [x] Função
+* [x] Operador Ternário
+* [x] Operador typeof
 
 Bibliografia <br>
 Curso Gratuito Curso em vídeo. <br>
