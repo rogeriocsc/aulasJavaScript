@@ -16,6 +16,7 @@ Aprenda sobre JavaScript
 * [x] Estrutura While e do While
 * [x] Estrutura For
 * [x] Estudando sobre Array
+* [x] Método Filter 
 
 Bibliografia <br>
 Curso Gratuito Curso em vídeo. <br>
