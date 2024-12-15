@@ -8,11 +8,14 @@ Aprenda sobre JavaScript
 * [x] Entendendo Sobre DOM 
 * [x] Formulário de Entrada e Saída de Dados
 * [x] Estrutura Condicional Switch Case
-* [x] Estrutura condicional Simples
-* [x] Estrutura condicional Composta
+* [x] Estrutura Condicional Simples
+* [x] Estrutura Condicional Composta
 * [x] Função
 * [x] Operador Ternário
-* [x] Operador typeof
+* [x] Operador Typeof
+* [x] Estrutura While e do While
+* [x] Estrutura For
+* [x] Estudando sobre Array
 
 Bibliografia <br>
 Curso Gratuito Curso em vídeo. <br>
