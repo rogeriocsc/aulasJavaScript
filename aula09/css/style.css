@@ -104,6 +104,12 @@ button:hover {
     line-height: 1.4em;
 }
 
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
 @media screen and (max-width: 768px) {
     .img img{
         width: 70%;

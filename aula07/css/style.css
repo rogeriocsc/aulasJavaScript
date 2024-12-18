@@ -96,6 +96,12 @@ button:hover {
     background-color: rgb(218, 64, 64);
 }
 
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
 .res {
     padding: 10px;
 }

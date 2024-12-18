@@ -52,3 +52,10 @@ button {
     border: none;
     cursor: pointer;
 }
+
+footer {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
