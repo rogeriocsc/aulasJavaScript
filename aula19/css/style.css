@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: mintcream;
+    font-family: sans-serif;
+}
+
+section h2 {
+    text-align: center;
+    padding: 20px;
+    color: #191970;
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.5em;
+    margin-top: 0.7em;
+	color: #191970;
+	font-size: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"] {
+	padding: 0.8em;
+    width: 200px;
+	border: 2px solid #027373;
+    border-radius: 10px;
+    outline: none;
+} 
+
+.campo input:focus {
+	background: #F2F2F2;
+}
+
+button {
+    width: 140px;
+    padding: 12px;
+    margin: 20px auto;
+    display: block;
+    background-color: #253659;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #324a79;
+}
+
+.list {
+    margin: auto;
+    display: block;
+    width: 300px;
+}
+
+.lista {
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    margin: 14px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid grey;
+    overflow: scroll;
+}
+
+.res {
+    padding: 8px;
+    line-height: 1.4em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #191970;
+}

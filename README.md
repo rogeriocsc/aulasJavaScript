@@ -17,6 +17,8 @@ Aprenda sobre JavaScript
 * [x] Estrutura For
 * [x] Estudando sobre Array
 * [x] Método Filter 
+* [x] Método Getters e Setters
+* [x] Classe Construtora
 
 Bibliografia <br>
 Curso Gratuito Curso em vídeo. <br>
