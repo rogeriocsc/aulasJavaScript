@@ -7,13 +7,13 @@ class Produto {
         this.alerta = false
     }   
 
-    disponivel() {
+    estoqueDisponivel() {
         console.log("Estoque Disponível!")
         console.log(this.alerta = false)
         console.log("...........................")
     }
 
-    zerado() {
+    estoqueZerado() {
         console.log("Alerta! Estoque Zerado!")
         console.log(this.alerta = true)
         console.log("...........................")
@@ -33,18 +33,18 @@ let prod3 = new Produto("Pendrive USB", "Eletrônicos")
 let prod4 = new Produto("Cartão de Memória", "Eletrônicos")
 let prod5 = new Produto("Cabo USB", "Eletrônicos")
 prod1.info()
-prod1.disponivel()
+prod1.estoqueDisponivel()
 
 prod2.info()
-prod2.zerado()
+prod2.estoqueZerado()
 
 prod3.info()
-prod3.disponivel()
+prod3.estoqueDisponivel()
 
 prod4.info()
-prod4.zerado()
+prod4.estoqueZerado()
 
 prod5.info()
-prod5.disponivel()
+prod5.estoqueDisponivel()
 
 
