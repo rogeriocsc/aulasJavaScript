@@ -1,113 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* paleta de cores 
+Verde mar claro - #20b2aa
+Azul médio - #0000cd */
 
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: #60BF81;
-    font-family: "Open Sans", sans-serif;
+p, h1, label, input {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-header h2 {
-    color: white;
-    text-align: center;
-    padding: 20px;
+body, html {
+    background-image: linear-gradient(to top, #20b2aa, #0000cd);
+    height: 100vh;
+    width: 100vw;
 }
 
 main {
-    margin: 0px 5px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
-.section-form {
-    max-width: 800px;
-    height: 400px;
-    margin: 20px auto;
+section.raiz-q {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
     background-color: white;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
-    border-radius: 10px;
+    width: 950px;
+    height: 450px;
+    border-radius: 20px;
+    box-sizing: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    transform: translate(-50%, -50%);
 }
 
-.elementos {
-    float: left;
-    width: 42%;
-    height: 90%;
-    padding-top: 40px;
-    text-align: center;
-    background-color: white;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.img {
+section.raiz-q > div.imagem {
+    display: block;
     float: right;
     width: 50%;
     height: 100%;
-    background-color: #A0CD60;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background-image: url(../imagens/raiz-quadrada.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.img img {
-    margin: auto;
+section.raiz-q > div.formulario {
     display: block;
-    margin-top: 90px;
-    border-radius: 10px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+div.formulario > h1 {
+    text-align: center;
+    margin: 18px;
+    color: #024059;
+    font-size: 1.8em;
 }
 
 .campo {
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 .campo label {
     display: block;
-    margin-bottom: 0.2em;
-	color: #191970;
-	font-size: 1em;
+    margin-bottom: 8px;
+	color: #024059;
+	font-size: 1.05em;
 }
 
 .campo input[type="text"] {
-	padding: 0.5em;
-	border: 2px solid #191970;
-    border-radius: 10px;
-    outline: none;
+	width: 50%;
+    padding: 8px;
+    border: 2px solid #191970;
+    border-radius: 8px;
 } 
 
-.campo input:focus {
-	background: #dcdcf3;
+.campo input:focus-within {
+    background-color: rgb(235, 235, 235);
+    outline: none;
 }
 
-button {
-    width: 140px;
-    padding: 12px;
-    background-color: red;
+div.formulario > button {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 40px;
+    background-color: #D92525;
     color: white;
+    font-size: 1.04em;
     border: none;
-    font-size: 1em;
     border-radius: 10px;
-    transition: 0.4s;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: rgb(218, 64, 64);
+div.formulario button:hover{
+    background-color: #03A64A;
 }
 
-.res {
-    padding: 10px;
-}
-
-footer {
-    color: white;
+section.raiz-q > div.res {
     text-align: center;
-    font-style: italic;
-}
-
-@media screen and (max-width: 768px) {
-    .img img{
-        width: 70%;
-    }
+    font-size: 1.2em;
+    padding: 10px;
 }

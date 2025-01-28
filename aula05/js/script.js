@@ -1,9 +1,9 @@
+let raiz = window.document.getElementById('iraiz')
+let res = window.document.getElementById('resposta')
 function raizQ() {
-    let raizQd = window.document.getElementById('raiz')
-    let raiz = (raizQd.value)
-    let res = window.document.getElementById('resp')
-    let ra = Math.sqrt(raiz)
-    res.innerHTML = `A raiz quadrada do número <strong>${raiz}</strong> é <strong>${ra}</strong> `
+    let raizQ = (raiz.value)
+    let rQ = Math.sqrt(raizQ)
+    res.innerHTML = `<p>A raiz quadrada do número <strong> ${raizQ} </strong> é <strong> ${rQ} </strong> </p>`
 }
 
-// A função Math.sqrt() retorna a raiz quadrada de um número
+// A função Math.sqrt() retorna a raiz quadrada de um número.....
