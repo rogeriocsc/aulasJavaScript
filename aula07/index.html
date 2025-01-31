@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Média Valores</title>
-    <link rel="shortcut icon" href="imagem/ico-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Média entre Valores</title>
 </head>
 <body>
-    <header>
-        <h2>Média entre Valores</h2>
-    </header>
-    <main>   
-        <section class="section-form">
-            <section class="elementos">
+    <main>
+        <section class="media">
+            <div class="imagem"></div>
+            <div class="formulario">
+                <h1>Média de Valores</h1>
                 <div class="campo">
-                    <label for="vl1">Valor</label>
-                    <input type="text" name="vl1" id="val1" placeholder="Informe o Primeiro Valor">
+                    <label for="ival1">Primeiro Valor</label>
+                    <input type="text" name="val1" id="ival1" placeholder="Informe o Primeiro Valor">
                 </div>
                 <div class="campo">
-                    <label for="vl2">Valor</label>
-                    <input type="text" name="vl2" id="val2" placeholder="Informe o Segundo Valor">
+                    <label for="ival2">Segundo Valor</label>
+                    <input type="text" name="val2" id="ival2" placeholder="Informe o Segundo Valor">
                 </div>
-                <button onclick="media()">Verificar</button>
-                <div class="res" id="resp">
-                    <p>Informe os dados Acima!</p>
+                <button onclick="media()">Calcular</button>
+                <div class="res" id="resposta">
+                    <p>Informe os Dados Acima!</p>
                 </div>
-            </section>
-            <section class="img">
-                <img src="imagem/img-verificacao.png" alt="verificacao">
-            </section>
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>
-    <footer>
-        <p>Copyright Exercício 07 2025</p>
-    </footer>
 </body>
 </html>
