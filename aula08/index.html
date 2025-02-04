@@ -3,47 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valor Promocional</title>
-    <link rel="shortcut icon" href="imagem/ico-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Produto Promocional</title>
 </head>
 <body>
-    <header>
-        <h2>Preço Promocional</h2>
-    </header>
-    <main>    
-        <section class="section-form">
-            <section class="elementos">
+    <main>
+        <section class="produto">
+            <div class="imagem"></div>
+            <div class="formulario">
+                <h1>Produto Promocional</h1>
                 <div class="campo">
-                    <label for="prodt">Produto</label>
-                    <input type="text" name="prodt" id="prod" placeholder="Informe o nome do Produto">
+                    <label for="iprodt">Produto</label>
+                    <input type="text" name="produto" id="iprodt" placeholder="Informe o Produto">
                 </div>
                 <div class="campo">
-                    <label for="prec">Valor R$</label>
-                    <input type="text" name="prec" id="preco" placeholder="Informe o valor do Produto">
+                    <label for="ipreco">Preço</label>
+                    <input type="text" name="preco" id="ipreco" placeholder="Informe o valor R$">
                 </div>
                 <div class="campo">
                     <select id="operacao">
-                        <option value="">Selecione o Desconto R$</option>
+                        <option value="">Selecionar</option>
                         <option value="A">Desconto 5%</option>
                         <option value="B">Desconto 10%</option>
                         <option value="C">Desconto 15%</option>
                         <option value="D">Desconto 20%</option>
                     </select>
                 </div>
-                <button onclick="calcular()">Verificar</button>
-                <div class="res" id="res">
-                    <p>Informe os dados acima!</p>
+                <button onclick="calcular()">Calcular</button>
+                <div class="res" id="resposta">
+                    <p>Informe os Dados Acima!</p>
                 </div>
-            </section>
-            <section class="img">
-                <img src="imagem/img-verificacao.png" alt="verificacao">
-            </section>
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>
-    <footer>
-        <p>Copyright Exercício 08 2025</p>
-    </footer>
 </body>
 </html>

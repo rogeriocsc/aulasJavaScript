@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Situação Aluno</title>
-    <link rel="shortcut icon" href="imagem/ico-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon-icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Situação Aluno</title>
 </head>
 <body>
-    <header>
-        <h2>Situação Aluno</h2>
-    </header>
     <main>
-        <section class="section-form">
-            <section class="elementos">
+        <section class="aluno">
+            <div class="imagem"></div>
+            <div class="formulario">
+                <h1>Situação do Aluno</h1>
                 <div class="campo">
-                    <label for="nota1">Nota</label>
+                    <label for="n1">Primeira Nota</label>
                     <input type="text" name="nota1" id="n1" placeholder="Informe a Primeira Nota">
                 </div>
                 <div class="campo">
-                    <label for="nota2">Nota</label>
+                    <label for="n2">Segunda Nota</label>
                     <input type="text" name="nota2" id="n2" placeholder="Informe a Segunda Nota">
                 </div>
-                <button onclick="calcular()">Verificar</button>
-                <div class="res" id="resp">
-                    <p>Informe os dados Acima!</p>
+                <button onclick="calcular()">Calcular</button>
+                <div class="res" id="resposta">
+                    <p>Informe os Dados Acima!</p>
                 </div>
-            </section>
-            <section class="img">
-                <img src="imagem/img-verificacao.png" alt="verificacao">
-            </section>
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>
-    <footer>
-        <p>Copyright Exercício 10 2025</p>
-    </footer>
 </body>
 </html>

@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular Idade</title>
-    <link rel="shortcut icon" href="imagem/ico-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon-icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Calculo Idade</title>
 </head>
 <body>
-    <header>
-        <h2>Calcular Idade</h2>
-    </header>
     <main>
-        <section class="section-form">
-            <section class="elementos">
+        <section class="idade">
+            <div class="imagem"></div>
+            <div class="formulario">
+                <h1>Calcular Idade</h1>
                 <div class="campo">
                     <label for="anoAt">Ano Atual</label>
-                    <input type="text" name="anoAt" id="anoAtual" placeholder="Informe o Ano Atual">
+                    <input type="text" name="anoAtual" id="anoAt" placeholder="Informe o Ano Atual">
                 </div>
                 <div class="campo">
                     <label for="anoNasc">Ano Nascimento</label>
-                    <input type="text" name="anoNasc" id="anoN" placeholder="Informe o ano Nascimento">
+                    <input type="text" name="anoNascm" id="anoNasc" placeholder="Informe o ano Nascimento">
                 </div>
-                <button onclick="calcular()">Verificar</button>
-                <div class="res" id="res">
-                    <p>Informe os dados acima!</p>
+                <button onclick="calcular()">Calcular</button>
+                <div class="res" id="resposta">
+                    <p>Informe os Dados Acima!</p>
                 </div>
-            </section>
-            <section class="img">
-                <img src="imagem/img-verificacao.png" alt="verificacao">
-            </section>
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>
-    <footer>
-        <p>Copyright Exercício 09 2025</p>
-    </footer>
 </body>
 </html>
