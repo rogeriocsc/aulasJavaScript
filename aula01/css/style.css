@@ -45,7 +45,7 @@ section {
     border-radius: 10px;
 }
 
-footer {
+footer > p {
     color: white;
     text-align: center;
     font-style: italic;
