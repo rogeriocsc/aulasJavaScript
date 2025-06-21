@@ -53,7 +53,7 @@ button {
     cursor: pointer;
 }
 
-footer {
+footer > p {
     color: white;
     padding-top: 10px;
     text-align: center;
