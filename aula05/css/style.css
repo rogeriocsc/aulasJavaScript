@@ -12,7 +12,6 @@ Azul médio - #0000cd */
 
 p, h1, label, input {
     font-family: "Nunito", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -29,7 +28,7 @@ main {
     width: 100vw;
 }
 
-section.raiz-q {
+section.projeto-raiz {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,47 +37,47 @@ section.raiz-q {
     width: 950px;
     height: 450px;
     border-radius: 20px;
-    box-sizing: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
     transform: translate(-50%, -50%);
 }
 
-section.raiz-q > div.imagem {
-    display: block;
+section.projeto-raiz > div.imagem {
     float: right;
     width: 50%;
     height: 100%;
     background-image: url(../imagens/raiz-quadrada.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
 }
 
-section.raiz-q > div.formulario {
-    display: block;
+section.projeto-raiz > div.raiz-quadrada {
     float: left;
-    width: 50%;
-    padding: 10px;
+    width: 50%; 
 }
 
-div.formulario > h1 {
+div.raiz-quadrada {
     text-align: center;
-    margin: 18px;
+}
+
+div.raiz-quadrada > h1 {
+    padding: 18px;
     color: #024059;
     font-size: 1.8em;
 }
 
-.campo {
+div.campo {
     text-align: center;
 }
 
-.campo label {
+div.campo label {
     display: block;
     margin-bottom: 8px;
 	color: #024059;
 	font-size: 1.05em;
 }
 
-.campo input[type="text"] {
+div.campo input[type="text"] {
 	width: 50%;
     padding: 8px;
     border: 2px solid #191970;
@@ -90,25 +89,24 @@ div.formulario > h1 {
     outline: none;
 }
 
-div.formulario > button {
-    display: block;
-    margin: 20px auto;
+div.raiz-quadrada > button {
+    margin: 20px;
     width: 150px;
     height: 40px;
     background-color: #D92525;
     color: white;
-    font-size: 1.04em;
+    font-size: 1.02em;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-div.formulario button:hover{
+div.raiz-quadrada > button:hover {
     background-color: #03A64A;
 }
 
-section.raiz-q > div.res {
+section.projeto-raiz > div.res {
     text-align: center;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 5px;
 }
