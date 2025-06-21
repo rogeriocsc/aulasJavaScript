@@ -12,13 +12,8 @@ Grandes Telas: Acima de 1200px
 
 /* Tablet: 768px até 992px */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background-image: linear-gradient(to top, #00CCBF, #0000cd);
-    }
-
     section.produto {
         width: 90vw;
-        height: 470px;
     }
 
     section.produto > div.imagem {
@@ -32,53 +27,37 @@ Grandes Telas: Acima de 1200px
         float: right;
         width: 60%;
     }
-
-    div.formulario > h1 {
-        display: block;
-        text-align: center;
-        font-size: 1.7em;
-        padding-top: 10px;
-        padding-bottom: 4px;
-        color: rgb(255, 0, 0);
-    }
-
-    .campo input[type="text"] {
-        width: 55%;
-    }
 }
 
-/* Desktop: 992px até 1200px */
-@media screen and (min-width: 992px) {
+/* Celular: de 600px até 768px */
+@media screen and (max-width: 767px) {
     body {
-        background-image: linear-gradient(to top, #00CCBF, #0000cd);
+        background: #0000cd;
     }
 
     section.produto {
-        width: 950px;
-        height: 470px;
+        width: 300px;
+        height: 520px;
     }
 
     section.produto > div.imagem {
-        float: right;
-        width: 50%;
-        height: 100%;
+        display: block;
+        height: 100px;
+        width: 100%;
+        background-position: center center;
     }
-
+    
     section.produto > div.formulario {
-        float: left;
-        width: 50%;
+        display: block;
+        width: 100%;
+        padding: 10px;
     }
 
     div.formulario > h1 {
-        display: block;
-        text-align: center;
-        font-size: 1.7em;
-        padding-top: 10px;
-        padding-bottom: 4px;
-        color: rgb(255, 0, 0);
+        font-size: 1.4em;
     }
 
-    .campo input[type="text"] {
-        width: 55%;
+    div.campo input[type="text"] {
+        width: 70%;
     }
 }
