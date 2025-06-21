@@ -4,30 +4,43 @@
 }
 
 body {
-    background-color: mintcream;
+    background-color: #3B8C66;
     font-family: sans-serif;
 }
 
-section h2 {
+main {
+    margin: 10px 5px;
+}
+
+main > h2 {
     text-align: center;
     padding: 20px;
-    color: #191970;
+    color: white;
+}
+
+.projeto-cadastrar {
+    max-width: 700px;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .campo {
-    margin-bottom: 20px;
     text-align: center;
+    padding-top: 14px;
 }
 
 .campo label {
     display: block;
-    margin-bottom: 0.5em;
-    margin-top: 0.7em;
+    padding: 5px;
 	color: #191970;
 	font-size: 1em;
 }
 
 .campo input[type="text"], .campo input[type="email"] {
+    margin-bottom: 8px;
 	padding: 0.8em;
     width: 200px;
 	border: 2px solid #027373;
@@ -42,8 +55,7 @@ section h2 {
 button {
     width: 140px;
     padding: 12px;
-    margin: 20px auto;
-    display: block;
+    margin-top: 15px;    
     background-color: #253659;
     color: white;
     border: none;
@@ -57,21 +69,16 @@ button:hover {
     background-color: #324a79;
 }
 
-.list {
-    margin: auto;
-    display: block;
-    width: 300px;
-}
-
 .lista {
     width: 250px;
-    height: 150px;
+    height: 140px;
+    margin: auto;
+    margin-top: 14px;
     padding: 10px;
-    margin: 14px;
     background-color: white;
-    border-radius: 5px;
     border: 2px solid grey;
     overflow: scroll;
+    border-radius: 5px;
 }
 
 .res {
@@ -81,6 +88,7 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 20px;
-    color: #191970;
+    padding-top: 20px;
+    color: white;
+    font-size: 1.1em;
 }

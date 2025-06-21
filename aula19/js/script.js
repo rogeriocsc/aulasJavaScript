@@ -22,8 +22,8 @@ class Cadastro {
 }
 
 let cadastrados = []
-let nom = window.document.getElementById('nome')
-let email = window.document.getElementById('email')
+let nom = window.document.getElementById('name')
+let email = window.document.getElementById('mail')
 let btn = window.document.getElementById('btn')
 let res = window.document.getElementById('resp')
 
