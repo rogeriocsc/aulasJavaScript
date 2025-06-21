@@ -10,10 +10,10 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.2em;
 }
 
 h2 {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -41,7 +41,7 @@ section {
     border-radius: 10px;
 }
 
-footer {
+footer > p {
     color: white;
     text-align: center;
     font-style: italic;
