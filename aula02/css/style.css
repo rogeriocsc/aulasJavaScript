@@ -48,7 +48,7 @@ ul {
 	list-style-position: inside;
 }
 
-footer {
+footer > p {
     color: white;
     text-align: center;
     font-style: italic;
