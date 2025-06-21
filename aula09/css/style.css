@@ -17,7 +17,7 @@ p, h1, label, input, button {
 }
 
 body, html {
-    background: #0000cd;
+    background-image: linear-gradient(to top, #00E3CC, #0000cd);
     height: 100vh;
     width: 100vw;
 }
@@ -34,29 +34,36 @@ section.idade {
     left: 50%;
     overflow: hidden;
     background-color: white;
-    width: 300px;
-    height: 530px;
+    width: 950px;
+    height: 470px;
     border-radius: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.452);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.308);
     transform: translate(-50%, -50%);
 }
 
 section.idade > div.imagem {
-    display: block;
+    float: right;
+    width: 50%;
+    height: 100%;
     background-image: url(../imagens/calendario.png);
-    height: 160px;
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: top center;
 }
 
 section.idade > div.formulario {
-    display: block;
-    padding: 10px;
+    float: left;
+    width: 50%;
+}
+
+div.formulario {
+    text-align: center;
 }
 
 div.formulario > h1 {
-    display: none;
+    padding-top: 20px;
+    font-size: 2em;
+    color: rgb(255, 0, 0);
 }
 
 div.campo {
@@ -65,14 +72,14 @@ div.campo {
 
 div.campo label {
     display: block;
-    margin-bottom: 6px;
-    margin-top: 15px;
+    margin: 8px;
 	color: #024059;
 	font-size: 1.1em;
 }
 
 .campo input[type="text"] {
-	width: 70%;
+	width: 55%;
+    margin-bottom: 5px;
     padding: 8px;
     border: 2px solid #127369;
     border-radius: 8px;
@@ -84,8 +91,7 @@ div.campo label {
 }
 
 div.formulario > button {
-    display: block;
-    margin: 17px auto;
+    margin: 17px;
     width: 150px;
     height: 40px;
     background-color: #D92525;
@@ -96,7 +102,7 @@ div.formulario > button {
     cursor: pointer;
 }
 
-div.formulario button:hover{
+div.formulario > button:hover{
     background-color: #03A64A;
 }
 
