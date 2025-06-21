@@ -34,7 +34,7 @@ section {
     text-align: center;
 }
 
-footer {
+footer > p {
     text-align: center;
     padding: 20px;
     color: white;
