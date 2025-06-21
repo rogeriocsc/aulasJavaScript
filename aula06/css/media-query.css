@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Todas as demais midias */
 /* Typical Device Breakpoints 
 ------------------------------
@@ -12,67 +11,51 @@ Grandes Telas: Acima de 1200px
 
 /* Tablet: 768px até 992px */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background-image: linear-gradient(to top, #00CCBF, #5f2c82);
-    }
-
-    section.exponencial {
+    section.projeto-exponencial {
         width: 90vw;
-        height: 470px;
     }
 
-    section.exponencial > div.imagem {
+    section.projeto-exponencial > div.imagem {
         float: left;
         width: 40%;
         height: 100%;
         background-position: center center;
     }
 
-    section.exponencial > div.formulario {
+    section.projeto-exponencial > div.exponencial {
         float: right;
         width: 60%;
     }
-
-    div.formulario > h1 {
-        font-size: 2em;
-        padding-top: 8px;
-        color: rgb(255, 0, 0);
-    }
-
-    .campo input[type="text"] {
-        width: 55%;
-    }
 }
 
-/* Desktop: 992px até 1200px */
-@media screen and (min-width: 992px) {
+/* Celular: de 600px até 768px */
+@media screen and (max-width: 767px) {
     body {
-        background-image: linear-gradient(to top, #00CCBF, #5f2c82);
+        background: #0000cd;
     }
 
-    section.exponencial {
-        width: 950px;
-        height: 470px;
+    section.projeto-exponencial {
+        width: 300px;
+        height: 500px;
     }
 
-    section.exponencial > div.imagem {
-        float: right;
-        width: 50%;
-        height: 100%;
+    section.projeto-exponencial > div.imagem {
+        display: block;
+        height: 120px;
+        width: 100%;
+        background-position: center center;
+    }
+    
+    section.projeto-exponencial > div.exponencial {
+        display: block;
+        width: 100%;
     }
 
-    section.exponencial > div.formulario {
-        float: left;
-        width: 50%;
+    div.exponencial > h1 {
+        font-size: 1.5em;
     }
 
-    div.formulario > h1 {
-        font-size: 2em;
-        padding-top: 8px;
-        color: red;
-    }
-
-    .campo input[type="text"] {
-        width: 55%;
+    div.campo input[type="text"] {
+        width: 70%;
     }
 }
