@@ -3,9 +3,10 @@ let exp = window.document.getElementById('iexp')
 let res = window.document.getElementById('resposta')
 
 function exponencial() {
-    let base = (bas.value)
-    let expo = (exp.value)
-    let expoente = base ** expo
-    res.innerHTML = `${base} ^ ${expo} <br> Resultado: <strong> ${expoente}
-    </strong>`
+    let base = Number(bas.value)
+    let expo = Number(exp.value)
+    let funcaoExp = Math.pow(base, expo)
+    res.innerHTML = `Função Exponencial: ${base}<sup>${expo}</sup> <br> Resultado: <strong> ${funcaoExp}</strong>`
 }
+
+// A função Math.pow() retorna a base elevada ao expoente

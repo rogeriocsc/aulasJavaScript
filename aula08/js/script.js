@@ -1,40 +1,46 @@
-function calcular() {
-    let prod = document.getElementById('iprodt')
-    let prec = document.getElementById('ipreco')
-    let oper = document.getElementById('operacao')
-    let res = document.getElementById('resposta')
-    let produto = (prod.value)
-    let preco = (prec.value)
-    let op = (oper.value)
-    let desconto = null
-    let promoc = null
+let prod = window.document.getElementById('iprod')
+let prec = window.document.getElementById('ipreco')
+let oper = window.document.getElementById('operacao')
+let res = window.document.getElementById('resposta')
+let desconto = undefined
+let valorPromocional = undefined
+
+function verificar() {
     if (prod.value.length == 0 || prec.value.length == 0) {
-        return alert("Informe os Campos!")
+        window.alert('Informe os Campos!')
+        window.location.reload()
+    } else if (oper.value.length == 0) {
+        window.alert('[ERRO] Valor Inválido!')
+        window.location.reload()
     }
+}
+
+function calcular() {
+    verificar()
+    let produto = (prod.value)
+    let preco = Number(prec.value)
+    let op = (oper.value)
     switch (op) {
         case 'A':
-            desconto = (preco * 5) / 100
-            promoc = preco - desconto
-            res.innerHTML = `${produto} com um preço promocional de 5%. R$ ${promoc.toFixed(2)}`
+            desconto = Number((preco * 5) / 100)
+            valorPromocional = Number(preco - desconto)
             break;
         case 'B':
-            desconto = (preco * 10) / 100
-            promoc = (preco - desconto)
-            res.innerHTML = `${produto} com um preço promocional de 10%. R$ ${promoc.toFixed(2)}`
+            desconto = Number((preco * 10) / 100)
+            valorPromocional = Number(preco - desconto)
             break;
-        case 'C': 
-            desconto = (preco * 15) / 100
-            promoc = (preco - desconto)
-            res.innerHTML = `${produto} com um preço promocional de 15%. R$ ${promoc.toFixed(2)}`
-            break
+        case 'C':
+            desconto = Number((preco * 15) / 100)
+            valorPromocional = Number(preco - desconto)
+            break;
         case 'D':
-            desconto = (preco * 20) / 100
-            promoc = (preco - desconto)
-            res.innerHTML = `${produto} com um preço promocional de 20%. R$ ${promoc.toFixed(2)}`
-            break
+            desconto = Number((preco * 20) / 100)
+            valorPromocional = Number(preco - desconto)
+            break;
         default:
             res.innerHTML = '[ERRO] Valor Inválido!'
             break;
     }
+    res.innerHTML = `Produto: ${produto} <br> Valor: R$ ${preco.toFixed(2)} <br> Valor com Desconto: R$ ${valorPromocional.toFixed(2)}`
 }
 
