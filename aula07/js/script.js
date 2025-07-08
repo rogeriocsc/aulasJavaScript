@@ -1,8 +1,7 @@
-let val1 = document.querySelector('#ival1')
-let val2 = document.querySelector('#ival2')
-let res = document.querySelector('#resposta')
-
 function media() {
+    let val1 = document.querySelector('#ival1')
+    let val2 = document.querySelector('#ival2')
+    let res = document.querySelector('#resposta')
     let valor1 = Number(val1.value)
     let valor2 = Number(val2.value)
     let media = (valor1 + valor2) / 2

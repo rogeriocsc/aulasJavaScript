@@ -1,8 +1,7 @@
-let bas = window.document.getElementById('ibase')
-let exp = window.document.getElementById('iexp')
-let res = window.document.getElementById('resposta')
-
 function exponencial() {
+    let bas = window.document.getElementById('ibase')
+    let exp = window.document.getElementById('iexp')
+    let res = window.document.getElementById('resposta')
     let base = Number(bas.value)
     let expo = Number(exp.value)
     let funcaoExp = Math.pow(base, expo)
