@@ -56,7 +56,11 @@ Grandes Telas: Acima de 1200px
         font-size: 1.5em;
     }
 
+    div.media > h1 {
+        display: none;
+    }
+
     div.campo input[type="text"] {
-        width: 70%;
+        width: 60%;
     }
 }
