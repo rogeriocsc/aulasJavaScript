@@ -1,15 +1,37 @@
 function calcular() {
-    let nota1 = document.querySelector('#n1')
-    let nota2 = document.querySelector('#n2')
+    let n1 = document.querySelector('#n1')
+    let n2 = document.querySelector('#n2')
     let res = document.querySelector('#resposta')
-    let n1 = Number(nota1.value)
-    let n2 = Number(nota2.value)
-    let media = (n1 + n2) / 2
+   
+    // Verificação de espaços em branco e valores nulos
+    if (n1.value.trim() === '' || n2.value.trim() === '') {
+        res.innerHTML = "Preencha as duas notas."
+        return
+    }
+
+    let nota1 = Number(n1.value)
+    let nota2 = Number(n2.value)
+
+    // Verificar se os valores são numéricos.
+    if (isNaN(nota1) || isNaN(nota2)) {
+        res.innerHTML = "Digite apenas números."
+        return
+    }
+
+    // Verificação de Notas
+    if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
+        res.innerHTML = "As notas devem estar entre 0 e 10."
+        return
+    } 
+
+    // calcular a média após todas as validações
+    let media = (nota1 + nota2) / 2
+
     if (media >= 7) {
-        res.innerHTML = "Média: " + media.toFixed(2) + " Aluno APROVADO!"
-    } else if (media >= 5 && media < 7) {
-        res.innerHTML = "Média: " + media.toFixed(2) + " Aluno em RECUPERAÇÃO!"
+        res.innerHTML = `<p>Média: ${media.toFixed(2)} - Aluno APROVADO!</p>`
+    } else if (media >= 5) {
+        res.innerHTML = `<p>Média: ${media.toFixed(2)} - Aluno em RECUPERAÇÃO!</p>`
     } else {
-        res.innerHTML = "Média: " + media.toFixed(2) + " Aluno REPROVADO!"
+        res.innerHTML = `<p>Média: ${media.toFixed(2)} - Aluno REPROVADO!</p>`
     }
 }
