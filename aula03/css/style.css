@@ -7,15 +7,17 @@
 
 body {
     background-color: #03A64A;
+}
+
+h2, p, section {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
     font-style: normal;
-    font-size: 1.2em;
 }
 
 h2 {
     font-weight: 500;
-    font-style: normal;
+    color: white;
+    text-align: center;
 }
 
 header {
@@ -23,20 +25,16 @@ header {
     background-color: #025940;
 }
 
-header h2 {
-    color: white;
-    text-align: center;
-}
-
 main {
-    margin: 28px 5px;
+    margin: 20px 5px;
 }
 
 section {
     max-width: 500px;
-    height: 380px;
+    height: 350px;
     margin: auto;
     padding: 20px;
+    font-size: 1.2em;
     background-color: white;
     border-radius: 10px;
 }
