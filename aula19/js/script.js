@@ -1,50 +1,54 @@
 class Cadastro {
-    constructor(pnome, pemail) {
-        this.nome = pnome
-        this.mail = pemail
+    constructor(nome, email) {
+        this.nome = nome
+        this.email = email
     }
 
     getNome() {
         return this.nome
     }
 
-    getmail() {
-        return this.mail
+    getMail() {
+        return this.email
     }
 
     setNome(nome) {
         this.nome = nome
     }
 
-    setmail(mail) {
-        this.mail = mail
+    setMail(email) {
+        this.email = email
     }
 }
 
-let cadastrados = []
-let nom = window.document.getElementById('name')
-let email = window.document.getElementById('mail')
-let btn = window.document.getElementById('btn')
-let res = window.document.getElementById('resp')
+const cadastrados = []
+const inputNome = document.getElementById('name')
+const inputEmail = document.getElementById('mail')
+const res = document.getElementById('resp')
 
 function addCadastrar() {
     res.innerHTML = ""
     cadastrados.forEach((c)=>{
         const div = document.createElement("div") 
-        div.innerHTML = `Nome: ${c.getNome()}<br/>
-        E-mail: ${c.getmail()}<br/>----------<br/>`
+        div.innerHTML = `Nome: ${c.getNome()} <br/>
+        E-mail: ${c.getMail()} <hr>`
         res.appendChild(div)
     })
 }
 
 function cadastrar() {
-    let nome = (nom.value)
-    let mail = (email.value)
-    let cad = new Cadastro(nome, mail)
+    const nome = inputNome.value.trim()
+    const email = inputEmail.value.trim()
+    // Verificação dos campos
+    if (!nome || !email) {
+        alert("Preencha todos os campos.")
+        return
+    }
+    const cad = new Cadastro(nome, email)
     cadastrados.push(cad)
-    nom.value = ""
-    email.value = ""
-    nom.focus()
+    inputNome.value = ""
+    inputEmail.value = ""
+    inputNome.focus()
     addCadastrar()
     console.log(cadastrados)
 }
