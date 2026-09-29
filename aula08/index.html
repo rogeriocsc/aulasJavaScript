@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="shortcut icon" href="img/img-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/script.js" defer></script>
     <title>Produto Promocional</title>
 </head>
 <body>
     <main>
-       <section class="produto">
-            <div class="imagem"></div>
-            <div class="formulario">
+        <section class="projeto-produto">
+            <div class="img"></div>
+            <div class="campos-produto">
                 <h1>Produto Promocional</h1>
                 <div class="campo">
-                    <label for="iprod">Produto</label>
-                    <input type="text" name="produto" id="iprod" placeholder="Informe o Produto">
+                    <label for="i_prod">Produto</label>
+                    <input type="text" name="produto" id="i_prod" placeholder="Informe o produto">
                 </div>
                 <div class="campo">
-                    <label for="ipreco">Preço R$</label>
-                    <input type="text" name="preco" id="ipreco" placeholder="Informe o valor R$">
+                    <label for="i_preco">Preço R$</label>
+                    <input type="number" name="preco" id="i_preco" placeholder="Informe o preço R$" min="0">
                 </div>
                 <div class="campo">
                     <select id="operacao">
@@ -31,13 +32,14 @@
                         <option value="D">Desconto 20%</option>
                     </select>
                 </div>
-                <button onclick="calcular()">Verificar</button>
-            </div>
-            <div class="res" id="resposta">
-                <p>Informe os Dados Acima!</p>
+                <button type="button" onclick="calcular()">
+                    Verificar
+                </button>
+                <div class="resposta" id="res">
+                    <p>Verificando...</p>
+                </div>
             </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
 </body>
 </html>
