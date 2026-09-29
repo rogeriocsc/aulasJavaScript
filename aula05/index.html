@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
-    <title>Raiz Quadrada</title>
+    <link rel="shortcut icon" href="img/img-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/script.js" defer></script>
+    <title>Calculadora de Raiz Quadrada</title>
 </head>
 <body>
     <main>
         <section class="projeto-raiz">
-            <div class="imagem"></div>
+            <div class="img"></div>
             <div class="raiz-quadrada">
                 <h1>Raiz Quadrada</h1>
                 <div class="campo">
-                    <label for="iraiz">Raiz Quadrada</label>
-                    <input type="text" name="raiz" id="iraiz" placeholder="Informe a Raiz Quadrada">
+                    <label for="i_raiz">Raiz Quadrada</label>
+                    <input type="number" name="raiz" id="i_raiz" placeholder="Informe a Raiz Quadrada">
                 </div>
-                <button onclick="raizQ()">Calcular</button>
-            </div>
-            <div class="res" id="resposta">
-                <p>Raiz Quadrada = &radic;n</p>
+                <button type="button" onclick="raizQ()">
+                    Calcular
+                </button>
+                <div class="resposta" id="resp">
+                    <p>Calcular &#8730;</p>
+                </div>
             </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
 </body>
 </html>
