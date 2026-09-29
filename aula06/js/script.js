@@ -1,10 +1,10 @@
 function exponencial() {
-    let bas = window.document.getElementById('ibase')
-    let exp = window.document.getElementById('iexp')
-    let res = window.document.getElementById('resposta')
+    let bas = window.document.getElementById('i_bas')
+    let exp = window.document.getElementById('i_exp')
+    let res = window.document.getElementById('res')
 
     // Verifica se os campos estão vazios
-    if (bas.value.trim() === "" || exp.value.trim() === "") {
+    if (bas.value === "" || exp.value === "") {
         res.innerHTML = "<p>Por favor, preencha a base e o expoente.</p>"
         bas.focus()
         return
@@ -13,9 +13,9 @@ function exponencial() {
     let base = Number(bas.value)
     let expo = Number(exp.value)
     let funcaoExp = Math.pow(base, expo)
-    res.innerHTML = `<p> F ( x ) = ${base} <sup>${expo}</sup> 
-    <br> 
-    F ( x ) = <strong> ${funcaoExp}</strong> </p>`
+    res.innerHTML = `<p> 
+                        Resultado: <strong> ${funcaoExp}</strong>
+                    <p>`
 }
 
 // A função Math.pow() retorna a base elevada ao expoente

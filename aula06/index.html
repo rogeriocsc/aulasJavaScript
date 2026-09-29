@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/script.js" defer></script>
     <title>Exponencial</title>
 </head>
 <body>
     <main>
-        <section class="projeto-exponencial">
-            <div class="imagem"></div>
+        <section class="projeto-exp">
+            <div class="img"></div>
             <div class="exponencial">
                 <h1>Exponencial</h1>
                 <div class="campo">
-                    <label for="ibase">Base</label>
-                    <input type="text" name="base" id="ibase" placeholder="Informe a Base">
+                    <label for="i_bas">Base</label>
+                    <input type="number" name="base" id="i_bas" placeholder="Informe a Base" min="0">
                 </div>
                 <div class="campo">
-                    <label for="iexp">Expoente</label>
-                    <input type="text" name="exp" id="iexp" placeholder="Informe o Expoente">
+                    <label for="i_exp">Expoente</label>
+                    <input type="number" name="exp" id="i_exp" placeholder="Informe o Expoente" min="0">
                 </div>
-                <button onclick="exponencial()">Calcular</button>
-            </div>
-            <div class="res" id="resposta">
-                <p>F ( x ) = a <sup>x</sup></p>
+                <button type="button" onclick="exponencial()">
+                    Calcular
+                </button>
+                <div class="resposta" id="res">
+                    <p>Calculando...</p>
+                </div>
             </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
 </body>
 </html>
