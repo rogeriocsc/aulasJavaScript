@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
-    <title>Média entre Valores</title>
+    <link rel="shortcut icon" href="img/img-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/script.js" defer></script>
+    <title>Média de Valores</title>
 </head>
 <body>
     <main>
         <section class="projeto-media">
-            <div class="imagem"></div>
+            <div class="img"></div>
             <div class="media">
                 <h1>Média de Valores</h1>
                 <div class="campo">
-                    <label for="ival1">Primeiro Valor</label>
-                    <input type="text" name="val1" id="ival1" placeholder="Informe o Primeiro Valor">
+                    <label for="i_val1">Primeiro Valor</label>
+                    <input type="number" name="valor1" id="i_val1" placeholder="Informe o Primeiro Valor" min="0">
                 </div>
                 <div class="campo">
-                    <label for="ival2">Segundo Valor</label>
-                    <input type="text" name="val2" id="ival2" placeholder="Informe o Segundo Valor">
+                    <label for="i_val2">Segundo Valor</label>
+                    <input type="number" name="valor2" id="i_val2" placeholder="Informe o Segundo Valor" min="0">
                 </div>
-                <button onclick="media()">Calcular</button>
-            </div>
-            <div class="res" id="resposta">
-                <p>Informe os Dados Acima!</p>
+                <button type="button" onclick="media()">
+                    Calcular
+                </button>
+                <div class="resposta" id="res">
+                    <p>Calculando...</p>
+                </div>
             </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
 </body>
 </html>
