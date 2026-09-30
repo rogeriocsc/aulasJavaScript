@@ -1,26 +1,28 @@
 function calcular() {
-    let n1 = document.querySelector('#n1')
-    let n2 = document.querySelector('#n2')
-    let res = document.querySelector('#resposta')
+    let n1 = document.querySelector('#i_nota1')
+    let n2 = document.querySelector('#i_nota2')
+    let res = document.querySelector('#res')
    
     // Verificação de espaços em branco e valores nulos
-    if (n1.value.trim() === '' || n2.value.trim() === '') {
+    if (n1.value === '' || n2.value === '') {
         res.innerHTML = "Preencha as duas notas."
+        n1.focus()
         return
     }
 
     let nota1 = Number(n1.value)
     let nota2 = Number(n2.value)
 
-    // Verificar se os valores são numéricos.
-    if (isNaN(nota1) || isNaN(nota2)) {
-        res.innerHTML = "Digite apenas números."
-        return
-    }
-
     // Verificação de Notas
-    if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
+    if (nota1 < 0 || 
+        nota1 > 10 || 
+        nota2 < 0 || 
+        nota2 > 10
+    ) {
         res.innerHTML = "As notas devem estar entre 0 e 10."
+        n1.value = ''
+        n2.value = ''
+        n1.focus()
         return
     } 
 

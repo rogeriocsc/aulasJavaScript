@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon-icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
-    <title>Situação Aluno</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/script.js" defer></script>
+    <title>Situação do Aluno</title>
 </head>
 <body>
     <main>
-        <section class="aluno">
-            <div class="imagem"></div>
-            <div class="formulario">
+        <section class="projeto-aluno">
+            <div class="img"></div>
+            <div class="campos-aluno">
                 <h1>Situação do Aluno</h1>
                 <div class="campo">
-                    <label for="n1">Primeira Nota</label>
-                    <input type="text" name="nota1" id="n1" placeholder="Informe a Primeira Nota">
+                    <label for="i_nota1">Primeira Nota</label>
+                    <input type="number" name="nota1" id="i_nota1" placeholder="Informe a Primeira Nota">
                 </div>
                 <div class="campo">
-                    <label for="n2">Segunda Nota</label>
-                    <input type="text" name="nota2" id="n2" placeholder="Informe a Segunda Nota">
+                    <label for="i_nota2">Segunda Nota</label>
+                    <input type="number" name="nota2" id="i_nota2" placeholder="Informe a Segunda Nota">
                 </div>
-                <button onclick="calcular()">Calcular</button>
-            </div>
-            <div class="res" id="resposta">
-                <p>Informe os Dados Acima!</p>
+                <button type="button" onclick="calcular()">
+                    Calcular
+                </button>
+                <div class="resposta" id="res">
+                    <p>Calculando...</p>
+                </div>
             </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
 </body>
 </html>
