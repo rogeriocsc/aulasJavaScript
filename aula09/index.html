@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon-icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-query.css">
-    <title>Calculo Idade</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/script.js" defer></script>
+    <title>Calcular Idade</title>
 </head>
 <body>
     <main>
-        <section class="idade">
-            <div class="imagem"></div>
-            <div class="formulario">
+        <section class="projeto-idade">
+            <div class="img"></div>
+            <div class="campos-idade">
                 <h1>Calcular Idade</h1>
                 <div class="campo">
-                    <label for="anoAt">Ano Atual</label>
-                    <input type="text" name="anoAtual" id="anoAt" placeholder="Informe o Ano Atual">
+                    <label for="a_atual">Ano Atual</label>
+                    <input type="number" name="ano_atual" id="a_atual" placeholder="Ano Atual" min="0">
                 </div>
                 <div class="campo">
-                    <label for="anoNasc">Ano Nascimento</label>
-                    <input type="text" name="anoNascm" id="anoNasc" placeholder="Informe o ano Nascimento">
+                    <label for="a_nasc">Ano Nascimento</label>
+                    <input type="number" name="ano_nasc" id="a_nasc" placeholder="Ano Nascimento" min="0">
                 </div>
-                <button onclick="calcular()">Calcular</button>
-            </div>
-            <div class="res" id="resposta">
-                <p>Informe os Dados Acima!</p>
+                <button type="button" onclick="calcular()">
+                    Calcular
+                </button>
+                <div class="resposta" id="res">
+                    <p>Calculando...</p>
+                </div>
             </div>
         </section>
     </main>
-    <script src="js/script.js"></script>
 </body>
 </html>

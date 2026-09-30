@@ -1,10 +1,10 @@
 function calcular() {
-    let anoA = window.document.querySelector('#anoAt')
-    let anoN = window.document.querySelector('#anoNasc')
-    let res = document.getElementById('resposta')
+    let anoA = window.document.querySelector('#a_atual')
+    let anoN = window.document.querySelector('#a_nasc')
+    let res = document.getElementById('res')
     
      // Verifica se os campos estão vazios
-    if (anoA.value.trim() === "" || anoN.value.trim() === "") {
+    if (anoA.value === "" || anoN.value === "") {
         res.innerHTML = "<p>Por favor, preencha os Campos.</p>"
         anoA.focus()
         return
